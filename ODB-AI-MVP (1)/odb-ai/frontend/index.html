@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="ODB AI helps teams plan AI workloads, understand infrastructure costs, and prepare deployments.">
+  <title>ODB AI — AI infrastructure, made simpler</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="#" aria-label="ODB AI home"><span class="brand-mark">O</span><span>ODB<span class="brand-ai"> AI</span></span></a>
+    <div class="workspace"><span class="workspace-icon">N</span><span><b>Northstar Studio</b><small>Free workspace</small></span><span class="chevron">⌄</span></div>
+    <p class="nav-label">WORKSPACE</p>
+    <nav class="nav">
+      <button class="nav-link active" data-page="overview"><span>◫</span> Overview</button>
+      <button class="nav-link" data-page="assistant"><span>✳</span> AI Workload Assistant <i>NEW</i></button>
+      <button class="nav-link" data-page="workloads"><span>▦</span> Workloads</button>
+      <button class="nav-link" data-page="costs"><span>◷</span> Cost intelligence</button>
+    </nav>
+    <p class="nav-label">MANAGE</p>
+    <nav class="nav">
+      <button class="nav-link" data-page="integrations"><span>⌘</span> Integrations</button>
+      <button class="nav-link" data-page="settings"><span>⚙</span> Settings</button>
+    </nav>
+    <div class="sidebar-bottom">
+      <div class="help-card"><div class="help-symbol">?</div><b>Need a hand?</b><p>Explore the demo or connect your own stack.</p><button data-page="assistant">Open assistant ↗</button></div>
+      <div class="profile"><div class="avatar">OD</div><span><b>ODB Demo</b><small>Founder workspace</small></span><span class="dots">•••</span></div>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <button class="mobile-menu" id="menuBtn" aria-label="Open navigation">☰</button>
+      <div class="crumb">Workspace <span>/</span> <b id="crumbPage">Overview</b></div>
+      <div class="top-actions"><span class="demo-chip"><span></span> DEMO ENVIRONMENT</span><button class="icon-btn" title="Notifications">♧</button><button class="top-avatar">OD</button></div>
+    </header>
+    <div class="content">
+      <section class="page active" id="page-overview">
+        <div class="page-heading"><div><p class="eyebrow">SUNDAY, OCTOBER 25, 2026</p><h1>Your AI workspace<span class="accent">.</span></h1><p class="muted">A clearer picture of your AI workloads, usage and spend.</p></div><button class="btn btn-primary" data-page="assistant">✳ Plan a workload</button></div>
+        <div class="notice"><span class="notice-icon">i</span><div><b>You're exploring demo data.</b> Metrics, workloads and cost figures on this page are illustrative—not live cloud usage or invoices.</div><button class="notice-close" aria-label="Dismiss notice">×</button></div>
+        <div class="metric-grid">
+          <article class="metric-card"><div class="metric-top"><span>Workload definitions</span><span class="metric-icon">▦</span></div><div class="metric-number" id="metricWorkloads">04</div><div class="metric-foot"><span class="neutral-dot"></span> <span>Saved in this demo session</span></div></article>
+          <article class="metric-card"><div class="metric-top"><span>Estimated monthly spend</span><span class="metric-icon">◷</span></div><div class="metric-number" id="metricSpend">$184.60</div><div class="metric-foot"><span class="neutral-dot"></span> Illustrative estimate</div></article>
+          <article class="metric-card"><div class="metric-top"><span>Budget utilization</span><span class="metric-icon">⌁</span></div><div class="metric-number">46.2<span class="metric-unit">%</span></div><div class="progress"><span style="width:46.2%"></span></div><div class="metric-foot">Demo budget: $400/month</div></article>
+          <article class="metric-card"><div class="metric-top"><span>Connected providers</span><span class="metric-icon">⌘</span></div><div class="metric-number">0<span class="metric-unit">/ 3</span></div><div class="metric-foot"><span class="neutral-dot"></span> No provider connected</div></article>
+        </div>
+        <div class="section-grid">
+          <article class="panel chart-panel">
+            <div class="panel-heading"><div><h2>Estimated spend trend</h2><p>Illustrative monthly forecast</p></div><span class="pill">6 months</span></div>
+            <div class="chart-summary"><strong>$184.60</strong><span class="muted">/ month estimated</span></div>
+            <div class="chart-wrap"><div class="y-labels"><span>$400</span><span>$300</span><span>$200</span><span>$100</span><span>$0</span></div><svg class="chart" viewBox="0 0 660 210" role="img" aria-label="Illustrative trend chart showing monthly cost estimates"><defs><linearGradient id="area" x1="0" x2="0" y1="0" y2="1"><stop offset="0%" stop-color="#7168ff" stop-opacity=".24"/><stop offset="100%" stop-color="#7168ff" stop-opacity="0"/></linearGradient></defs><g class="grid-lines"><path d="M0 12H660 M0 56H660 M0 100H660 M0 144H660 M0 188H660"/></g><path d="M0 142 C45 136 68 150 110 123 S185 142 220 110 S295 123 330 91 S408 115 440 70 S518 92 550 60 S622 72 660 33 L660 188 L0 188Z" fill="url(#area)"/><path d="M0 142 C45 136 68 150 110 123 S185 142 220 110 S295 123 330 91 S408 115 440 70 S518 92 550 60 S622 72 660 33" fill="none" stroke="#8278ff" stroke-width="3" stroke-linecap="round"/><g class="chart-dots"><circle cx="110" cy="123" r="3.5"/><circle cx="220" cy="110" r="3.5"/><circle cx="330" cy="91" r="3.5"/><circle cx="440" cy="70" r="3.5"/><circle cx="550" cy="60" r="3.5"/><circle cx="660" cy="33" r="4.5"/></g></svg></div>
+            <div class="chart-months"><span>May</span><span>Jun</span><span>Jul</span><span>Aug</span><span>Sep</span><span>Oct</span></div>
+            <div class="chart-foot"><span><i class="legend-dot"></i> Estimated monthly cost</span><span>Not metered usage</span></div>
+          </article>
+          <article class="panel budget-panel">
+            <div class="panel-heading"><div><h2>Budget guardrail</h2><p>Monthly workspace target</p></div><span class="pill">Demo</span></div>
+            <div class="budget-ring"><div><strong>46<span>%</span></strong><small>of budget</small></div></div>
+            <div class="budget-numbers"><div><small>Estimated spend</small><b>$184.60</b></div><div><small>Monthly budget</small><b>$400.00</b></div></div>
+            <div class="budget-callout"><span>↗</span><p><b>$215.40</b> of illustrative budget remains.</p></div>
+            <button class="btn btn-secondary btn-full" data-page="costs">Review cost insights</button>
+          </article>
+        </div>
+        <div class="section-grid lower-grid">
+          <article class="panel table-panel"><div class="panel-heading"><div><h2>Workload definitions</h2><p>Recent items in your workspace</p></div><button class="text-btn" data-page="workloads">View all ↗</button></div><div class="table-scroll"><table><thead><tr><th>WORKLOAD</th><th>PROFILE</th><th>EST. MONTHLY</th><th>STATUS</th></tr></thead><tbody id="overviewRows"></tbody></table></div></article>
+          <article class="panel activity-panel"><div class="panel-heading"><div><h2>Activity</h2><p>Recent demo events</p></div><span class="pill">Sample</span></div><div class="activity-list"><div class="activity-item"><span class="activity-icon purple">✳</span><div><b>Workload plan generated</b><p>Document assistant · Demo activity</p><small>Today, 10:42 AM</small></div></div><div class="activity-item"><span class="activity-icon green">✓</span><div><b>Budget guardrail reviewed</b><p>Workspace budget · Demo activity</p><small>Yesterday</small></div></div><div class="activity-item"><span class="activity-icon blue">▦</span><div><b>Workload definition saved</b><p>Product search API · Demo activity</p><small>Oct 23, 2026</small></div></div></div></article>
+        </div>
+      </section>
+
+      <section class="page" id="page-assistant">
+        <div class="page-heading"><div><p class="eyebrow">WORKLOAD INTELLIGENCE</p><h1>AI workload assistant<span class="accent">.</span></h1><p class="muted">Start with the job to be done. We'll help you plan the infrastructure.</p></div></div>
+        <div class="notice"><span class="notice-icon">i</span><div><b>Prototype assistant.</b> This interactive planner uses transparent rules and illustrative rates. It is not an AI model inference or live provider recommendation.</div></div>
+        <div class="assistant-layout">
+          <article class="panel assistant-form">
+            <div class="panel-heading"><div><h2>Describe your workload</h2><p>Share what you're building and expected scale.</p></div><span class="ai-orb">✳</span></div>
+            <label for="workloadName">Workload name</label><input id="workloadName" maxlength="80" placeholder="e.g. Customer support assistant" value="Document assistant">
+            <label for="workloadDesc">What should your AI application do?</label><textarea id="workloadDesc" rows="4" maxlength="1500" placeholder="Describe the task, model needs, traffic, and constraints...">Answer questions from company documents using retrieval augmented generation.</textarea>
+            <div class="form-row"><div><label for="scale">Expected usage</label><select id="scale"><option value="light">Light · prototype / low traffic</option><option value="medium" selected>Moderate · early product</option><option value="heavy">High · growing traffic</option></select></div><div><label for="compute">Compute preference</label><select id="compute"><option value="balanced">Balanced</option><option value="cpu">CPU-first</option><option value="gpu">GPU-capable</option></select></div></div>
+            <div class="form-row"><div><label for="hours">Compute hours / month</label><input id="hours" type="number" min="1" max="744" value="160"></div><div><label for="budget">Monthly budget (USD)</label><input id="budget" type="number" min="1" max="10000000" value="250"></div></div>
+            <button class="btn btn-primary btn-full" id="generatePlan">✳ Generate planning estimate <span>→</span></button>
+            <p class="microcopy">No infrastructure will be provisioned. Avoid entering secrets or confidential data.</p>
+          </article>
+          <article class="panel result-panel" id="plannerResult">
+            <div class="empty-result"><div class="empty-orb">✳</div><h2>Your plan will appear here</h2><p>Generate an estimate to explore an initial compute profile, budget fit and deployment checklist.</p><div class="empty-points"><span>✓ Transparent assumptions</span><span>✓ Editable workload definition</span><span>✓ Configuration template</span></div></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="page" id="page-workloads">
+        <div class="page-heading"><div><p class="eyebrow">COMPUTE MANAGEMENT</p><h1>Workloads<span class="accent">.</span></h1><p class="muted">Manage workload definitions and prepare deployment plans.</p></div><button class="btn btn-primary" data-page="assistant">＋ New workload</button></div>
+        <div class="notice"><span class="notice-icon">i</span><div><b>Definitions only.</b> Items here do not represent running compute resources. Connect a provider and configure deployment services before executing workloads.</div></div>
+        <article class="panel table-panel standalone"><div class="panel-heading"><div><h2>All workload definitions</h2><p id="workloadCount">4 definitions</p></div><input class="search-input" id="workloadSearch" placeholder="⌕  Search workloads" aria-label="Search workloads"></div><div class="table-scroll"><table><thead><tr><th>WORKLOAD</th><th>PROFILE</th><th>EST. MONTHLY</th><th>STATE</th><th>ACTION</th></tr></thead><tbody id="allWorkloadRows"></tbody></table></div><div class="table-bottom"><span>Demo session data</span><button class="text-btn" id="exportData">Export JSON ↓</button></div></article>
+      </section>
+
+      <section class="page" id="page-costs">
+        <div class="page-heading"><div><p class="eyebrow">COST INTELLIGENCE</p><h1>Know your numbers<span class="accent">.</span></h1><p class="muted">Model spend before it surprises you.</p></div></div>
+        <div class="notice"><span class="notice-icon">i</span><div><b>Illustrative calculator.</b> Sample hourly rates are editable examples, not current cloud quotes. Taxes, storage, egress, discounts and model API pricing may differ.</div></div>
+        <div class="cost-layout">
+          <article class="panel cost-calculator"><div class="panel-heading"><div><h2>Monthly estimate</h2><p>Adjust assumptions to model your workload.</p></div></div>
+            <label for="costHours">Compute hours per month <output id="costHoursOut">160 hrs</output></label><input id="costHours" type="range" min="1" max="744" value="160">
+            <label for="rate">Illustrative compute rate (USD/hour)</label><div class="input-with-prefix"><span>$</span><input id="rate" type="number" min="0" step=".01" value="0.22"></div>
+            <label for="modelCalls">Model API calls / month</label><input id="modelCalls" type="number" min="0" value="50000">
+            <label for="apiUnit">Illustrative model cost per 1,000 calls (USD)</label><div class="input-with-prefix"><span>$</span><input id="apiUnit" type="number" min="0" step=".01" value="0.12"></div>
+            <label for="storage">Storage (GB)</label><input id="storage" type="number" min="0" value="50">
+            <label for="storageRate">Illustrative storage rate (USD/GB/month)</label><div class="input-with-prefix"><span>$</span><input id="storageRate" type="number" min="0" step=".01" value="0.02"></div>
+          </article>
+          <article class="panel cost-total"><p class="eyebrow">ESTIMATED MONTHLY TOTAL</p><div class="total-number" id="costTotal">$49.00</div><p class="muted">Illustrative model · USD</p><div class="cost-breakdown"><div><span>Compute</span><b id="computeCost">$35.20</b></div><div><span>Model API</span><b id="apiCost">$6.00</b></div><div><span>Storage</span><b id="storageCost">$1.00</b></div><div class="breakdown-total"><span>Estimated subtotal</span><b id="subtotalCost">$42.20</b></div></div><div class="budget-edit"><label for="costBudget">Budget limit (USD/month)</label><input id="costBudget" type="number" value="250" min="1"></div><div class="budget-message" id="budgetMessage">Estimate is within the illustrative budget.</div><button class="btn btn-secondary btn-full" id="saveCostModel">Save model to this session</button><p class="microcopy" id="costSaved" aria-live="polite"></p></article>
+        </div>
+      </section>
+
+      <section class="page" id="page-integrations">
+        <div class="page-heading"><div><p class="eyebrow">YOUR TOOLCHAIN</p><h1>Integrations<span class="accent">.</span></h1><p class="muted">Provider connectors are prepared for future secure setup.</p></div></div>
+        <div class="notice"><span class="notice-icon">i</span><div><b>No live integrations configured.</b> These provider cards are connection-ready design previews—not active integrations.</div></div>
+        <div class="integration-grid">
+          <article class="panel integration-card"><div class="provider-logo aws">aws</div><h2>Amazon Web Services</h2><p>Compute, storage, and billing data through scoped IAM access.</p><span class="status-tag">Not connected</span><button class="btn btn-secondary btn-full" disabled>Connector not configured</button></article>
+          <article class="panel integration-card"><div class="provider-logo azure">▰</div><h2>Microsoft Azure</h2><p>Resource inventory, deployment operations, and cost exports.</p><span class="status-tag">Not connected</span><button class="btn btn-secondary btn-full" disabled>Connector not configured</button></article>
+          <article class="panel integration-card"><div class="provider-logo gcp">G</div><h2>Google Cloud</h2><p>Workload orchestration and usage reporting with verified permissions.</p><span class="status-tag">Not connected</span><button class="btn btn-secondary btn-full" disabled>Connector not configured</button></article>
+          <article class="panel integration-card"><div class="provider-logo api">✳</div><h2>AI model provider</h2><p>Server-side model routing for workload planning and assistance.</p><span class="status-tag">Demo mode</span><button class="btn btn-secondary btn-full" data-page="settings">Configure backend →</button></article>
+        </div>
+      </section>
+
+      <section class="page" id="page-settings">
+        <div class="page-heading"><div><p class="eyebrow">WORKSPACE CONTROL</p><h1>Settings<span class="accent">.</span></h1><p class="muted">Workspace preferences and prototype configuration.</p></div></div>
+        <div class="settings-grid"><article class="panel settings-panel"><h2>Workspace</h2><label for="orgName">Workspace name</label><input id="orgName" value="Northstar Studio"><label for="ownerEmail">Owner email (demo)</label><input id="ownerEmail" type="email" placeholder="founder@company.com"><button class="btn btn-primary" id="saveSettings">Save preferences</button><p class="microcopy" id="settingsSaved" aria-live="polite"></p></article>
+          <article class="panel settings-panel"><h2>Prototype information</h2><div class="settings-line"><span>Environment</span><b>Local demo</b></div><div class="settings-line"><span>Data persistence</span><b>Browser session</b></div><div class="settings-line"><span>Authentication</span><b>Not configured</b></div><div class="settings-line"><span>Database</span><b>Backend scaffold included</b></div><div class="settings-line"><span>AI provider</span><b>Rule-based demo planner</b></div></article></div>
+        <article class="panel docs-panel"><h2>Moving beyond the demo</h2><p>Connect a managed authentication provider, PostgreSQL, a server-side AI API, and a cloud adapter. Review the included README for environment setup and security requirements.</p><button class="btn btn-secondary" id="showDeploy">View deployment checklist ↓</button><div id="deployChecklist" hidden><ul><li>Set unique production secrets in the deployment environment.</li><li>Provision PostgreSQL and apply migrations.</li><li>Configure authentication and enforce organization-level authorization.</li><li>Connect model API and validate pricing data sources.</li><li>Implement provider adapters, audit logs, quotas and billing.</li><li>Run tests, security review and load tests before launch.</li></ul></div></article>
+      </section>
+      <footer class="footer"><span>© 2026 ODB AI</span><span>Plan smarter. Build with confidence.</span><span><span class="footer-dot"></span> Demonstration product</span></footer>
+    </div>
+  </main>
+</div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="app.js"></script>
+</body></html>
